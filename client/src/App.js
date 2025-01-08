@@ -15,10 +15,12 @@ const App = () => {
   }
   return (
     <div className="App">
-      <div><button onClick={showMeteo}>Meteo du jour</button></div>
-      {displayMeteo ? <Meteo></Meteo> : ""}
-      <div><button onClick={showHoroscope}>Horoscope du jour</button></div>
-      {displayHoroscope ? <Horoscope></Horoscope> : ""}
+      <div className='rub'><button onClick={showMeteo}>Meteo du jour</button>
+        {displayMeteo ? <Meteo></Meteo> : ""}
+      </div>
+      <div className='rub'><button onClick={showHoroscope}>Horoscope du jour</button>
+        {displayHoroscope ? <Horoscope></Horoscope> : ""}
+      </div>
     </div>
   );
 }
